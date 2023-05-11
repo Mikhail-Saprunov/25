@@ -39,7 +39,6 @@ def test_show_my_pets():
     print('питомцев:', (len(names)))
     for i in range(len(names)):
         assert images[i].get_attribute('src') != ''
-        if images[i].get_attribute('src') != '':
         assert names[i].text != ''
         parts = names[i].text.split(" ")
         print(parts)
